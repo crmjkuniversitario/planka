@@ -10,7 +10,7 @@ services:
       - key: PGSSLMODE
         value: require
       - key: BASE_URL
-        value: https://seu-app.onrender.comservices:
+        value: https://planka-nf83.onrender.com/services:
   - type: web
     name: planka
     env: docker
