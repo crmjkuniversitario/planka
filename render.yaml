@@ -1,6 +1,18 @@
 services:
   - type: web
     name: planka
+    env: node
+    build:
+      dockerfile: Dockerfile
+    envVars:
+      - key: DATABASE_URL
+        value: postgres://planka0b_user:zz8CEqmhEJo4L63s10UPV08F1M5k8R@dpg-djjtt4d3jp1c78ep1kd9-3.avgapnoodaccess_2gxddec:5432/planka0b
+      - key: PGSSLMODE
+        value: require
+      - key: BASE_URL
+        value: https://seu-app.onrender.comservices:
+  - type: web
+    name: planka
     env: docker
     plan: free
     dockerfilePath: Dockerfile
