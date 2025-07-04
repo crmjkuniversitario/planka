@@ -37,6 +37,12 @@
     "concurrently": "^8.2.2",
     "genversion": "^3.2.0",
     "husky": "^9.1.7",
-    "lint-staged": "^15.5.2"
-  }
+    "lint-staged": "^15.5.2",
+    "pg": "^8.16.3"
+  },
+  "description": "**Project mastering driven by fun**",
+  "main": "create-admin-old.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
