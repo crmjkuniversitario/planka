@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: planka
+    env: docker
+    plan: free
+    dockerfilePath: Dockerfile
+    envVars:
+      - key: DATABASE_URL
+        value: postgres://plankadb_user:zzSCEqmHbEbQeL63ssDUPXM8F1NkEkBR@dpg-djjtr4u3jplc73eplks0-a.oregon-postgres.render.com:5432/plankadb?sslmode=require
+      - key: REDIS_URL
+        value: redis://default:vTJDH6UoRyByqqJQ3GLZasu0WdkdopgK@redis-15273.c74.us-east-1-4.ec2.redns.redis-cloud.com:15273
+      - key: SECRET_KEY
+        value: vTJDH6UoRyByqqJQ3GLZasu0WdkdopgK
+    branch: main
+    autoDeploy: true
